@@ -1,13 +1,19 @@
 /* This is a comment in css */
+:root {
+    --img-width: 150px;
+    --img-height: auto;
+    --border: 1px solid rgb(0 0 0 / 0.2);
+
+}
 
 main {
     max-width: 840px;
 }
 
 main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
+    width: var(--img-width);
+    height: var(--img-height);
+    border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -15,7 +21,7 @@ main img {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    border: var(--border);
     padding: 1rem;
     background-color: #eee;
     color: #333;
@@ -24,8 +30,8 @@ aside {
 }
 
 aside img {
-    width: 200px;
-    height: auto;
+    width: var(--img-width);
+    height: var(--img-height);
 }
 
 nav {
@@ -49,6 +55,6 @@ p {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: var(--border);
     text-align: center;
 }
