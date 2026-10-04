@@ -79,9 +79,9 @@ h1 {
     color: var(--accent1-color);
 }
 
-article {
+.hero article {
     position: absolute;
-    top: 350px;
+    top: 325px;
     width: 100%;
     padding: 10px;
     text-align: left;
@@ -92,5 +92,8 @@ article {
 
 .hero article img {
     float: right;
-    width: 100px;
+    width: 125px;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
 }
