@@ -1,23 +1,31 @@
 :root {
-    --primary-color: #f9fafb;
-    /*Light gray*/
-    --accent1-color: #111827;
-    /*Almost black */
-    --accent2-color: #6b7280;
-    /*Gray*/
+    --primary-color: #f3ecfa;
+    /*White-purple*/
+    --accent1-color: #2e1065;
+    /*Dark-purple */
+    --accent2-color: #7c3aed;
+    /*Light-purple*/
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
+/* header section */
 header {
+    display: grid;
+    grid-template: 1fr 2fr;
     background-color: var(--primary-color);
     color: var(--accent2-color);
+}
+
+header img {
+    width: 125px;
+    height: auto;
 }
 
 body {
@@ -30,6 +38,7 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
+    background-color: var(--primary-color);
 }
 
 h1,
@@ -56,6 +65,7 @@ article {
     margin: 5px;
 }
 
+/* Hero image and stuff */
 .hero {
     position: relative;
 }
@@ -66,11 +76,11 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 10px;
     width: 100%;
-    padding: 16px;
+    padding: 14px;
     text-align: center;
     opacity: 0.7;
     background-color: var(--primary-color);
@@ -79,13 +89,12 @@ h1 {
 
 .hero article {
     position: absolute;
-    top: 325px;
-    bottom: 35px;
+    bottom: 10px;
     width: 100%;
-    padding: 10px;
-    margin: 0;
-    text-align: left;
+    padding: 0px;
+    margin: 0px;
     opacity: 0.7;
+    text-align: left;
     background-color: var(--primary-color);
     color: var(--accent1-color);
 }
@@ -93,7 +102,5 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
-    height: auto;
-    padding: 10px;
-    margin: 10px;
+    padding: 5px;
 }
