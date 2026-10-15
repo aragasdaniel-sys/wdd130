@@ -15,7 +15,6 @@
     box-sizing: border-box;
 }
 
-/* header section */
 header {
     display: grid;
     grid-template: 1fr 2fr;
@@ -65,7 +64,7 @@ article {
     margin: 5px;
 }
 
-/* Hero image and stuff */
+/* Hero section */
 .hero {
     position: relative;
 }
