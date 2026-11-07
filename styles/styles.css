@@ -49,8 +49,8 @@ aside {
 }
 
 aside img {
-    width: var(--img-width);
-    height: var(--img-height);
+    width: 200px;
+    height: auto;
 }
 
 nav {
