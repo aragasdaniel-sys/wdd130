@@ -13,6 +13,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 header,
@@ -30,7 +31,7 @@ main img {
     width: var(--img-width);
     height: var(--img-height);
     border: var(--border);
-    padding: 2px;
+    padding: 1rem;
     box-shadow: 0 0 30px gray;
     float: right;
     margin: 1rem;
@@ -88,7 +89,7 @@ h1 {
 }
 
 p {
-    padding: 0;
+    padding: 1rem;
 }
 
 footer {
@@ -110,7 +111,7 @@ footer {
     padding-left: 2rem;
 }
 
-.grid {
+/* .grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-}
+} */
