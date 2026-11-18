@@ -92,13 +92,11 @@ article {
 
 .adventures {
     display: grid;
-    grid-template-rows: 1/3;
+    grid-template-rows: 1/3fr;
 }
 
 .figures {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
 }
 
 /*      HERO SECTION      */
