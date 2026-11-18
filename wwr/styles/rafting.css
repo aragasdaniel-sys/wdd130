@@ -92,7 +92,6 @@ article {
 
 .adventures {
     display: grid;
-    grid-template-rows: 1/3fr;
 }
 
 .figures {
