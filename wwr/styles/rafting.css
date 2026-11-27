@@ -15,9 +15,14 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
 header {
     display: grid;
-    grid-template-columns: 125px 1fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
     background-color: var(--primary-color);
     color: var(--accent2-color);
@@ -27,18 +32,19 @@ header img {
     width: 125px;
     height: auto;
     padding: 10px;
+    justify-self: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 50px;
-}
-
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
 }
 
 header,
@@ -64,39 +70,6 @@ article {
 }
 
 /*      CLASSES      */
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 50px;
-    padding: 5px;
-    margin: 5px;
-}
-
-.history {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-}
-
-.hero-history {
-    text-align: center;
-}
-
-.hero-history img {
-    width: 100%;
-    height: auto;
-    box-sizing: border-box;
-}
-
-.adventures {
-    display: grid;
-}
-
-.figures {
-    display: grid;
-}
 
 /*      HERO SECTION      */
 .hero {
@@ -136,4 +109,59 @@ article {
     float: right;
     width: 125px;
     padding: 5px;
+}
+
+/*      HISTORY SECTION      */
+.history {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.hero-history {
+    text-align: center;
+}
+
+.hero-history img {
+    width: 100%;
+    height: auto;
+}
+
+/*      ADVENTURES SECTION       */
+.adventures {
+    display: grid;
+    grid-template: auto 1fr / repeat(5, 1fr);
+}
+
+.adventures h2 {
+    grid-column: 1/-1;
+    justify-self: center;
+    padding: 0.5rem;
+}
+
+.adventures img {
+    width: 100%;
+    height: 6rem;
+    object-fit: cover;
+    padding: 0.3rem;
+}
+
+.adventures figure {
+    text-align: center;
+}
+
+/*      FOOTER       */
+.footer-box {
+    display: flex;
+    align-items: center;
+}
+
+.footer-box p {
+    flex: 1;
+    text-align: center;
+}
+
+.socialmedia a,
+img {
+    width: 2.5rem;
+    text-decoration: none;
 }
